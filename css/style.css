@@ -4,13 +4,13 @@
     Author: Ian Nuttall, Open Designs
     Author URI: http://www.opendesigns.org
     Version: 1.0
- 
+
     Template: genesis
     Template Version: 0.8
- 
+
 	License: GNU General Public License v2.0 (or later)
 	License URI: http://www.opensource.org/licenses/gpl-license.php
-	
+
 	Massive hat tip to the guys over at Sure Fire Web Services for building such an impressive child theme for Genesis. :)
 */
 
@@ -138,12 +138,12 @@ width: 33.3%;
 subsequent columns, and a total sum of 99% to avoid browser rounding errors */
 
 .teaser {
-	
+
 /* border: 1px solid #D6D6D6;
 border-right: none;
 border-bottom: none;
 height: 493px;	 */
-	
+
 }
 
 .first {
@@ -376,7 +376,7 @@ transition: all 80ms;
 
 text-decoration: none;
 color: #fa633a;
-	
+
 }
 
 #page-nav.horizontal-list .active {
@@ -464,7 +464,7 @@ height: 20px;
 ------------------------------------------------------------ */
 
 #inner {
-	
+
 	overflow: hidden;
 
 }
@@ -487,7 +487,7 @@ height: 20px;
 	   -webkit-box-sizing: border-box;
 	   -ms-box-sizing:     border-box;
 	    box-sizing:        border-box;
-	
+
 }
 
 /* Content
@@ -501,12 +501,12 @@ margin-top: 4em;
 }
 
 .single #content {
-border-bottom: 0;	
+border-bottom: 0;
 }
 
 .content-sidebar #content,
 .sidebar-content #content {
-	
+
 }
 
 .full-width-content #content {
@@ -572,15 +572,18 @@ p.subscribe-to-comments {
 }
 
 .container { position:relative; }
-.img_item { position:absolute; top: 318px; left: 318px; z-index: 1; } 
-.img_Facebook { position:absolute; top: 120px; left: 20px; width:38px; height:38px; z-index: 2;  opacity: 0.5;}
-.img_Twitter { position:absolute; top: 158px; left: 20px; width:38px; height:38px; z-index: 2;  opacity: 0.5;} 
-.img_Pintrest { position:absolute; top: 196px; left: 20px; width:38px; height:38px; z-index: 2;  opacity: 0.5;} 
-/* .img_Favorite { position:absolute; top: 234px; left: 20px; width:38px; height:38px; z-index: 2;  opacity: 0.5;}  */
-.img_Facebook:Hover, 
-.img_Twitter:Hover,
-.img_Pintrest:Hover,
-.img_Favorite:Hover { opacity: 1; }
+#img_item { position:absolute; top: 318px; left: 318px; z-index: 1; }
+#img_Facebook { position:absolute; top: 120px; left: 20px; width:38px; height:38px; z-index: 2;  opacity: 0.5;}
+#img_Twitter { position:absolute; top: 158px; left: 20px; width:38px; height:38px; z-index: 2;  opacity: 0.5;}
+#img_Pintrest { position:absolute; top: 196px; left: 20px; width:38px; height:38px; z-index: 2;  opacity: 0.5;}
+#img_Favorite { position:absolute; top: 234px; left: 20px; width:38px; height:38px; z-index: 2;  opacity: 0.5;}
+
+
+#facebook-share:hover { opacity: 1; }
+#img_Twitter:hover { opacity: 1; }
+#img_Pintrest:hover { opacity: 1; }
+#img_Favorite:hover { opacity: 1; }
+
 #image-link { position:absolute; top:0px; left: 0px; width:318px; height:318px;  z-index: 4; }
 #facebook-share { position:absolute; top: 120px; left: 20px; width:38px; height:38px; z-index: 5; }
 #twitter-share { position:absolute; top: 158px; left: 20px; width:38px; height:38px; z-index: 5; }
@@ -650,13 +653,13 @@ list-style: none;
 ------------------------------------------------------------ */
 
 /* .bigg-likes,.bigg-read-more {
-	
- border: 1px solid #E2E2E2; 
+
+ border: 1px solid #E2E2E2;
 background-color: white;
 color: #9F9F9F;
 -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, .00);
 box-shadow: 0 1px 0 rgba(0, 0, 0, .00);
- width: 100px; 
+ width: 100px;
 padding: 4px;
 } */
 
@@ -806,7 +809,7 @@ h2.entry-title a:hover {
 
 .entry-content ol,
 .entry-content ul {
-	
+
 }
 
 .archive-page ul li,
@@ -1008,7 +1011,7 @@ box-shadow: 0 -1px 0 #c4c4c4;
 }
 
 .sidebar .searchform {
-	
+
 }
 
 /* eNews and Update Widget
@@ -1119,7 +1122,7 @@ box-shadow: 0 -1px 0 #c4c4c4;
 	background: #f7f7f7;
 	padding: 1em 0 1em;
 	border-top: 3px solid #D6D6D6;
-	
+
 	position: absolute;
 	left: 0;
 	bottom: 0;
@@ -1132,7 +1135,7 @@ box-shadow: 0 -1px 0 #c4c4c4;
 #bigg-footer, #bigg-footer a, #bigg-footer p {
 	color: #DDD;
 	font-size: 13px;
-	line-height: 16px;	
+	line-height: 16px;
 }
 
 #bigg-footer .wrap {
@@ -1201,7 +1204,7 @@ font-size: 11px;
 
 @media only screen and (max-width: 1023px) {
 
-.wrap .teaser.fourcol { 
+.wrap .teaser.fourcol {
 	float: none;
 	width: 100%;
 	height: auto;
@@ -1213,15 +1216,15 @@ font-size: 11px;
 .teaser .post-image {
 	width:	auto;
 	float: left;
-	
+
 }
 
 h2.entry-title, div.entry-content {
-	display:inline;	
+	display:inline;
 }
 
 #content-sidebar-wrap {
-	padding: 0;	
+	padding: 0;
 }
 
 #bigg-footer {
@@ -1229,37 +1232,37 @@ h2.entry-title, div.entry-content {
 }
 
 #site-nav {
-	display: none;	
+	display: none;
 }
 
 h2 {
-	padding-left: 0;	
+	padding-left: 0;
 }
 
 }
 
 @media only screen and (max-width: 767px) {
-	
+
 	div.entry-content {
-	display:block;	
+	display:block;
 }
 
 .wrap .onecol, .wrap .twocol, .wrap .threecol, .wrap .fourcol, .wrap .fivecol, .wrap .sixcol, .wrap .sevencol, .wrap .eightcol, .wrap .ninecol, .wrap .tencol, .wrap .elevencol, .wrap .twelvecol {
 	padding-left: 0!important;
-	padding-right: 0!important;	
+	padding-right: 0!important;
 }
 
 #popular-upcoming {
-	border-bottom: 3px solid #D6D6D6;	
+	border-bottom: 3px solid #D6D6D6;
 }
-	
+
 }
 
 @media only screen and (max-width: 550px) {
-	
+
 .teaser .post-image, .alignleft {
 	float: none!important;
-	
+
 }
 
 .teaser .post-image {
@@ -1268,12 +1271,12 @@ h2 {
 	height: 170px;
 }
 
-.wrap .teaser.fourcol, .wrap .feature, h2.entry-title { 
+.wrap .teaser.fourcol, .wrap .feature, h2.entry-title {
 	text-align: center;
 }
 
 div.entry-content {
-	text-align: left;	
+	text-align: left;
 }
 
 h2.entry-title {
@@ -1281,7 +1284,7 @@ h2.entry-title {
 }
 
 #site-header-bigg-social {
-	display: none;	
+	display: none;
 }
 
 #page-nav {
@@ -1297,7 +1300,7 @@ img {
 height: auto;
 max-width: 98%;
 }
-	
+
 }
 
 @media only screen and (min-width: 1533px) {
@@ -1317,7 +1320,3 @@ max-width: 98%;
 	left: 700px;
 	}
 }
-
-
-
-
