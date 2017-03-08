@@ -28,10 +28,15 @@ $(document).ready(function() {
       };
   });
 
-  $("#img_Favorite").on("click", function(){
 
-      
-  });
+
+ var $divs = $(".item");
+ $('a#popular-scroll').on('click', function () {
+     var numericallyOrderedDivs = $divs.sort(function (a, b) {
+         return $(a).find(".likes").text() < $(b).find(".likes").text();
+     });
+     $("#galleryWrap").html(numericallyOrderedDivs);
+ });
 
 
 });
