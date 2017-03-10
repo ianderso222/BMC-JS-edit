@@ -13,44 +13,8 @@
 <link rel="stylesheet" id="responsive-css-css" href="css/responsive.css" type="text/css" media="all" />
 <link rel="stylesheet" id="tb_styles-css" href="css/tb-styles.min.css" type="text/css" media="all" />
 
-<script type="text/javascript" src="js/jquery.js"></script>
+<script src="js/jquery-3.1.1.js"></script>
 
-<script type="text/javascript">
-  jQuery(window).scroll(function (event) {
-	  	
-		var top = jQuery('#popular-upcoming').offset().top - jQuery(document).scrollTop();;
-		// what the y position of the scroll is
-		var y = jQuery(this).scrollTop();
-		// whether that's below the form
-		if (y >= top)  {
-		// if so, add the active class to popular-upcoming and remove from content
-		jQuery('.page-nav-popular-posts').addClass('active');
-		jQuery('.page-nav-top-posts').removeClass('active');
-		} else {
-		// otherwise remove it
-		jQuery('.page-nav-popular-posts').removeClass('active');
-		jQuery('.page-nav-top-posts').addClass('active');
-	   }
-  });
-  
-  jQuery(document).ready(function (){
-  jQuery('#popular-scroll').click(function (){
-            //jQuery(this).animate(function(){
-                jQuery('html, body').animate({
-                    scrollTop: jQuery('#popular-upcoming').offset().top
-                     }, 2000);
-            //});
-        });
-		
-		jQuery('#feature-scroll').click(function (){
-            //jQuery(this).animate(function(){
-                jQuery('html, body').animate({
-                    scrollTop: jQuery('#inner').offset().top
-                     }, 2000);
-            //});
-        });
-		  });
-</script>
 
 </head>
 
@@ -59,59 +23,63 @@
 <div id="header">
 
 	<div class="site-header">
-	
+
 		<h1 class="site-header-logo-container"><a href="/"><span class="image-replace">WebsWeirdest.com</span><img src="images/ww-small.png" width="65" height="35" id="ww-logo" alt="WebsWeirdest"/></a></h1>
-      
+
             <ul id="page-nav" class="horizontal-list">
-			
+
 				<li class="page-nav-top-posts"><a href="javascript:void(0)" id="feature-scroll" class="page-anchor-link">Newest Items</a></li>
 
-				<li class="page-nav-popular-posts"><a href="javascript:void(0)" id="popular-scroll" class="page-anchor-link">Popular Items</a></li>
-				
+				<li class="page-nav-popular-posts"><a href="index.html" onclick='' id="popular-scroll" class="page-anchor-link">Popular Items</a></li>
+
 				<li class="page-nav-popular-posts">
-				
-					<div id="search-box">
-					
-						<input type="text" placeholder="Search for items." class="form-field" id="item-search"> <input type="button" value="Search" class="button" id="search-for-item-btn">
-					
-					</div>
-				
+
+                    <div id="search-box">
+                        <form id="live-search" method="post"  >
+
+                            <input type="submit " class="text-input" id="filter"/>
+                            <button type="button" value="Search" class="button">Search</button>
+
+
+                        </form>
+                    </div>
+
 				</li>
-				
+
 			</ul>
 
 		<div id="site-nav" class="horizontal-list">
 
 			<div class="menu-main-menu-container">
-			
+
 				<ul id="menu-main-menu" class="menu">
-				
-					<li id="menu-item-144" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-142"><a href="index.htm">Home</a></li>
-					
-					<li id="menu-item-142" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-144"><a href="/">About</a></li>
-					
+
+					<li id="menu-item-144" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-142"><a href="index.html">Home</a></li>
+
+					<li id="menu-item-142" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-144"><a href="about.html">About</a></li>
+
 				</ul>
-				
+
 			</div>
-			
+
 		</div><!-- #site-nav -->
 
 		<div id="site-header-bigg-social">
 
 			<ul class="horizontal-list">
-			
+
 				<li><a href="https://twitter.com/" target="_blank" class="bigg-social-twitter bigg-social-icon image-replace">Twitter</a></li>
-				
+
 				<li><a href="http://www.facebook.com/" target="_blank" class="bigg-social-fb bigg-social-icon image-replace">Facebook</a></li>
-				
+
 				<li><a href="https://www.pintrest.com" target="_blank" class="bigg-social-pintrest bigg-social-icon image-replace">Pintrest</a></li>
-				
+
 			</ul>
-				  
-		</div>  
-		
+
+		</div>
+
 	</div>
-	
+
 </div>
 
 
@@ -119,36 +87,36 @@
 <div id="inner">
 <div class="wrap">
 <div id="content-sidebar-wrap">
-				
+
 <div id="content" class="hfeed">
-				
+
 <div class="Webs Weirdest Title post-5 post type-post status-publish format-standard hentry category-featured category-parent-category-i entry feature feature">
 
-		<h2 class="image"><a title="Welcome to Web's Weirdest" rel="bookmark"></a><img src="images/WW-logo.png"></h2> 
-		
+		<h2 class="image"><a title="Welcome to Web's Weirdest" rel="bookmark"></a><img src="images/WW-logo.png"></h2>
+
 		<div class="title-content">
-		
+
 			<p><h1>This is a little introduction to Bigg, the free website template that might look a little fdfdbit like afdfdf popular site you’ve probably already heard of.  Can you guess what site I’m talking about? ;)</h1></p>
-		
+
 		</div><!-- end .entry-content -->
-		
+
 </div><!-- end .postclass -->
 </div><!-- end #content -->
 </div><!-- end .wrap -->
-</div><!-- end #inner --> 
+</div><!-- end #inner -->
 
 	<div id="bigg-footer">
 
 		<div class="wrap">
 
 			<div class="fourcol">
-			
+
 				<div class="bigg-footer"><h4 class="widgettitle">© 2017 WebsWeirdest.com</h4></div>
-					
+
 			</div>
-			
+
 		</div>
-					
+
 	</div>
 
 </div>
@@ -158,5 +126,6 @@
 
 
 </div>
+<script src="js/main.js"></script>
 </body>
 </html>
